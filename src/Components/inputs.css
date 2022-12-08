@@ -1,0 +1,38 @@
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+.inputs input{
+    width: 100%;
+    background-color: #222;
+    border: none;
+    outline: none;
+    padding: 8px;
+    color: #fff;
+}
+.showMsg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 32px;
+    border: solid 6px #222;
+    background-color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.showMsg::before{
+    content: "Show";
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+}
+.hide ~ .showMsg::before{
+    content: "Hide";
+}
