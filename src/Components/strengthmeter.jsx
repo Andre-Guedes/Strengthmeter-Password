@@ -1,12 +1,11 @@
-
 import "./strengthmeter.css"
 
 const Strengthmeter = () => {
-
-    
     return(
-        <div className="strength"></div>
+        <div className="strength">
+
+        </div>
     )
 }
 
-export default Strengthmeter ;
+export default Strengthmeter;

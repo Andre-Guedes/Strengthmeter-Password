@@ -18,8 +18,9 @@ const Inputs = () => {
         if(/[A-Z]/.test(password)) i++
         if(/[a-z]/.test(password)) i++
         if(/[0-9]/.test(password)) i++
-        if(/[A-Za-z0-9]/.test(password)) i++
-        containerStrength(i)
+        if(/\s+/g.test(password)) i++
+        if(/\W|_/.test(password)) i++
+        return containerStrength(i)
     }
     
     function containerStrength(i) {

@@ -1,8 +1,7 @@
-import { useState } from 'react'
-
 import "./App.css"
 import Inputs from "./Components/inputs"
-import Strengthmeter from './Components/strengthmeter'
+import Buttons from './Components/button'
+import Strengthmeter from "./Components/strengthmeter"
 
 function App() {
   return (
@@ -12,7 +11,8 @@ function App() {
           Register to Access
         </h2>
         <Inputs ></Inputs>
-        <Strengthmeter ></Strengthmeter>
+        <Strengthmeter></Strengthmeter>
+        <Buttons></Buttons>
       </div>
     </div>
   )

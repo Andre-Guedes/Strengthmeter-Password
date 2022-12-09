@@ -4,6 +4,7 @@
     flex-direction: column;
     gap: 15px;
     position: relative;
+    margin-bottom: 20px;
 }
 .inputs input{
     width: 100%;
